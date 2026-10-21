@@ -31,16 +31,18 @@ Create rendert die Signallampe in `NixieTubeRenderer.renderAsSignal` aus Partial
 - `create:block/track_signal/white_tube`
 - `create:block/track_signal/white_glow`
 
-Beide verweisen danach auf eine eigene Textur, `create_green_signals:block/signal_glow_green`. Creates `signal_glow.png` bleibt unangetastet, weil sie auch von der roten Lampe und vom gemeinsamen Lampenkern (`white_cube`) genutzt wird.
+Die Ersatzmodelle und die Textur `create_green_signals:block/signal_green` sind komplett selbst erstellt. Das Pack enthält keine Dateien aus Create. Creates `signal_glow.png` bleibt unangetastet, weil sie auch von der roten Lampe und vom gemeinsamen Lampenkern (`white_cube`) genutzt wird.
 
 ## Selbst bauen
 ```sh
-# Textur neu erzeugen (optional, z. B. mit anderer Farbe; braucht Pillow)
-python3 tools/make_green_texture.py --color 3CFF64 --gain 1.8
+# Textur neu zeichnen (optional, z. B. mit anderer Farbe; braucht Pillow)
+python3 tools/make_green_texture.py --tube 1F8534 --glow 33DA55
 # Zip bauen → dist/create-green-signals-<version>.zip
 tools/build.sh 1.0.0
 ```
 
-## Credits
-- Die Modelle und die Ausgangstextur stammen aus [Create](https://github.com/Creators-of-Create/Create) von simibubi & Team.
+## Lizenz & Credits
+- Dieses Pack steht unter der [MIT-Lizenz](LICENSE).
+- [Create](https://github.com/Creators-of-Create/Create) gehört dem Create-Team (Code unter MIT, Assets „All Rights Reserved“). Das Pack enthält keine Create-Assets: Modelle und Textur sind eigenständig erstellt.
 - Die Idee kommt aus [Create: Steam 'n' Rails](https://github.com/Layers-of-Railways/Railway).
+- Inoffizielles Add-on, nicht mit dem Create-Team verbunden oder von ihm unterstützt.

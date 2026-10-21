@@ -1,20 +1,19 @@
 {
-	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "create_green_signals:block/signal_glow_green",
-		"particle": "create_green_signals:block/signal_glow_green"
+		"glow": "create_green_signals:block/signal_green",
+		"particle": "create_green_signals:block/signal_green"
 	},
 	"elements": [
 		{
 			"from": [-0.5, -0.5, -0.5],
 			"to": [0.5, 0.5, 0.5],
 			"faces": {
-				"north": {"uv": [0, 0, 1, 1], "texture": "#0"},
-				"east": {"uv": [0, 0, 1, 1], "texture": "#0"},
-				"south": {"uv": [0, 0, 1, 1], "texture": "#0"},
-				"west": {"uv": [0, 0, 1, 1], "texture": "#0"},
-				"up": {"uv": [0, 0, 1, 1], "texture": "#0"},
-				"down": {"uv": [0, 0, 1, 1], "texture": "#0"}
+				"north": {"uv": [8, 0, 9, 1], "texture": "#glow"},
+				"east": {"uv": [8, 0, 9, 1], "texture": "#glow"},
+				"south": {"uv": [8, 0, 9, 1], "texture": "#glow"},
+				"west": {"uv": [8, 0, 9, 1], "texture": "#glow"},
+				"up": {"uv": [8, 0, 9, 1], "texture": "#glow"},
+				"down": {"uv": [8, 0, 9, 1], "texture": "#glow"}
 			}
 		}
 	]
