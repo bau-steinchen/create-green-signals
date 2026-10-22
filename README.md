@@ -37,6 +37,8 @@ Die Ersatzmodelle und die Textur `create_green_signals:block/signal_green` sind 
 ```sh
 # Textur neu zeichnen (optional, z. B. mit anderer Farbe; braucht Pillow)
 python3 tools/make_green_texture.py --tube 1F8534 --glow 33DA55
+# Pack-Icon pack/pack.png neu zeichnen (optional)
+python3 tools/make_pack_icon.py
 # Zip bauen → dist/create-green-signals-<version>.zip
 tools/build.sh 1.0.0
 ```
